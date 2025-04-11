@@ -1,5 +1,5 @@
 // src/components/HotelHomePage.jsx
-import React from "react";
+
 import "./Home.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
