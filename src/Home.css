@@ -1,0 +1,138 @@
+/* Fullscreen sticky navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar h2 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+  
+  .navbar p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Page container */
+  .home-container {
+    padding: 1rem 2rem;
+    background: #f7f7f7;
+  }
+  
+  /* Card grid layout */
+  .listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  /* Individual card */
+  .card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .details {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #444;
+  }
+  
+  .suggested {
+    margin-top: 0.6rem;
+    color: #f97316; /* orange */
+    font-weight: 600;
+  }
+  
+  .compare-btn {
+    margin-top: 0.8rem;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .compare-btn:hover {
+    background: #333;
+    color: white;
+  }
+  
+  /* Load More button */
+  .load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .load-more button {
+    padding: 10px 28px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .load-more button:hover {
+    background: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 100%;
+    }
+  
+    .navbar h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
